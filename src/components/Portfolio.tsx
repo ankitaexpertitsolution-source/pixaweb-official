@@ -17,7 +17,7 @@ export default function Portfolio() {
           <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:border-neon-lime/50 transition-all duration-300">
             <div className="space-y-6">
               <div className="w-16 h-16 bg-neon-lime/10 border-2 border-neon-lime rounded-2xl flex items-center justify-center group-hover:bg-neon-lime/20 transition-all">
-                <UserCircle className="text-neon-lime" size={32} />
+                <UserCircle className="text-neon-lime" size={32} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">Fund your account</h3>
@@ -25,9 +25,9 @@ export default function Portfolio() {
                   Open your crypto account today and start trading crypto. You can fund funds with a variety of payment.
                 </p>
               </div>
-              <button className="flex items-center space-x-2 text-white font-semibold group-hover:text-neon-lime transition-colors">
+              <button className="flex items-center space-x-2 text-white font-semibold group-hover:text-neon-lime transition-colors" aria-label="Learn more about funding your account">
                 <span>Learn More</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={18} aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -35,17 +35,17 @@ export default function Portfolio() {
           <div className="group bg-neon-lime rounded-3xl p-8 transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-neon-lime/20">
             <div className="space-y-6">
               <div className="w-16 h-16 bg-deep-black/10 border-2 border-deep-black rounded-2xl flex items-center justify-center">
-                <Shield className="text-deep-black" size={32} />
+                <Shield className="text-deep-black" size={32} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-deep-black mb-3">Verify your identity</h3>
-                <p className="text-deep-black/70 text-sm leading-relaxed mb-6">
+                <p className="text-deep-black/85 text-sm leading-relaxed mb-6">
                   Complete our identity verification process to secure your account and discover what Phasellus has to offer.
                 </p>
               </div>
-              <button className="flex items-center space-x-2 text-deep-black font-semibold bg-white/90 px-6 py-3 rounded-full hover:bg-white transition-colors">
+              <button className="flex items-center space-x-2 text-deep-black font-semibold bg-white/90 px-6 py-3 rounded-full hover:bg-white transition-colors" aria-label="Learn more about identity verification">
                 <span>Learn More</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={18} aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Portfolio() {
           <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:border-neon-lime/50 transition-all duration-300">
             <div className="space-y-6">
               <div className="w-16 h-16 bg-neon-lime/10 border-2 border-neon-lime rounded-2xl flex items-center justify-center group-hover:bg-neon-lime/20 transition-all">
-                <Lightbulb className="text-neon-lime" size={32} />
+                <Lightbulb className="text-neon-lime" size={32} aria-hidden="true" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">Start trading</h3>
@@ -61,9 +61,9 @@ export default function Portfolio() {
                   You're good to go! Buy crypto with NFTs, DeFi, and over new business. Phasellus has to offer.
                 </p>
               </div>
-              <button className="flex items-center space-x-2 text-white font-semibold group-hover:text-neon-lime transition-colors">
+              <button className="flex items-center space-x-2 text-white font-semibold group-hover:text-neon-lime transition-colors" aria-label="Learn more about starting to trade">
                 <span>Learn More</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={18} aria-hidden="true" />
               </button>
             </div>
           </div>

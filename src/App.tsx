@@ -1,10 +1,12 @@
+import { lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FeaturesGrid from './components/FeaturesGrid';
 import TrustSection from './components/TrustSection';
-import Portfolio from './components/Portfolio';
-import WhatsNew from './components/WhatsNew';
-import Footer from './components/Footer';
+
+const Portfolio = lazy(() => import('./components/Portfolio'));
+const WhatsNew = lazy(() => import('./components/WhatsNew'));
+const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
@@ -13,9 +15,11 @@ function App() {
       <Hero />
       <FeaturesGrid />
       <TrustSection />
-      <Portfolio />
-      <WhatsNew />
-      <Footer />
+      <Suspense fallback={<div className="min-h-[400px]" aria-busy="true" />}>
+        <Portfolio />
+        <WhatsNew />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

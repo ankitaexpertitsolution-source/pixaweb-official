@@ -13,17 +13,17 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors">
-                <Twitter className="text-deep-black" size={18} />
+              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors" aria-label="Follow us on Twitter">
+                <Twitter className="text-deep-black" size={18} aria-hidden="true" />
               </a>
-              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors">
-                <Facebook className="text-deep-black" size={18} />
+              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors" aria-label="Follow us on Facebook">
+                <Facebook className="text-deep-black" size={18} aria-hidden="true" />
               </a>
-              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors">
-                <Instagram className="text-deep-black" size={18} />
+              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors" aria-label="Follow us on Instagram">
+                <Instagram className="text-deep-black" size={18} aria-hidden="true" />
               </a>
-              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors">
-                <Youtube className="text-deep-black" size={18} />
+              <a href="#" className="w-10 h-10 bg-neon-lime rounded-full flex items-center justify-center hover:bg-neon-lime/90 transition-colors" aria-label="Follow us on YouTube">
+                <Youtube className="text-deep-black" size={18} aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -64,12 +64,14 @@ export default function Footer() {
               NFTs are transforming the way we value digital.
             </p>
             <div className="flex space-x-2">
+              <label htmlFor="newsletter-email" className="sr-only">Email Address</label>
               <input
+                id="newsletter-email"
                 type="email"
                 placeholder="Email Address"
-                className="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-neon-lime/50"
+                className="flex-1 bg-white/5 border border-white/10 rounded-full px-4 py-2 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-neon-lime/50"
               />
-              <button className="bg-neon-lime text-deep-black px-6 py-2 rounded-full font-semibold text-sm hover:bg-neon-lime/90 transition-all whitespace-nowrap">
+              <button className="bg-neon-lime text-deep-black px-6 py-2 rounded-full font-semibold text-sm hover:bg-neon-lime/90 transition-all whitespace-nowrap" aria-label="Subscribe to newsletter">
                 Subscribe
               </button>
             </div>

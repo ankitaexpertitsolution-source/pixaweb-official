@@ -34,12 +34,12 @@ export default function FeaturesGrid() {
               <div>
                 <h3 className="text-2xl font-bold text-deep-black mb-2">Industry</h3>
                 <h3 className="text-2xl font-bold text-deep-black mb-4">best practices.</h3>
-                <p className="text-deep-black/70 text-sm leading-relaxed mb-6">
+                <p className="text-deep-black/85 text-sm leading-relaxed mb-6">
                   Phasellus vitales est secures a growing ecosystem of specialized blockchains called parachains.
                 </p>
-                <button className="flex items-center space-x-2 text-deep-black font-semibold group-hover:translate-x-2 transition-transform">
+                <button className="flex items-center space-x-2 text-deep-black font-semibold group-hover:translate-x-2 transition-transform" aria-label="Learn more about industry best practices">
                   <span>Learn More</span>
-                  <ArrowRight size={20} />
+                  <ArrowRight size={20} aria-hidden="true" />
                 </button>
               </div>
             </div>

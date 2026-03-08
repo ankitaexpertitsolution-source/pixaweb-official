@@ -27,7 +27,7 @@ export default function Hero() {
 
             <div className="flex items-start space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
               <div className="bg-neon-lime rounded-full p-3">
-                <ArrowRight className="text-deep-black" size={24} />
+                <ArrowRight className="text-deep-black" size={24} aria-hidden="true" />
               </div>
               <div>
                 <p className="text-gray-300 text-sm leading-relaxed">
@@ -49,14 +49,14 @@ export default function Hero() {
                   <div className="mt-8 space-y-4">
                     <div className="text-center space-y-2">
                       <div className="w-16 h-16 bg-neon-lime/20 rounded-full mx-auto flex items-center justify-center">
-                        <TrendingUp className="text-neon-lime" size={32} />
+                        <TrendingUp className="text-neon-lime" size={32} aria-hidden="true" />
                       </div>
                       <p className="text-white font-bold text-xl">BITCOIN ETH</p>
                       <p className="text-gray-400 text-sm">Ethereum</p>
                     </div>
                     <div className="bg-neon-lime rounded-xl p-4 text-center">
                       <p className="text-deep-black font-bold text-2xl">$96.10</p>
-                      <p className="text-deep-black/70 text-sm">10% of the future</p>
+                      <p className="text-deep-black/85 text-sm">10% of the future</p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +67,7 @@ export default function Hero() {
                   </div>
                   <div className="mt-12 text-center space-y-4">
                     <p className="text-white font-bold text-lg">Join to<br />building<br />crypto.</p>
-                    <button className="bg-neon-lime text-deep-black px-6 py-2 rounded-full font-semibold text-sm">
+                    <button className="bg-neon-lime text-deep-black px-6 py-2 rounded-full font-semibold text-sm" aria-label="Get started with crypto">
                       Get Started
                     </button>
                   </div>

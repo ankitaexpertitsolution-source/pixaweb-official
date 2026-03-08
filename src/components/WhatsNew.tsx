@@ -43,7 +43,7 @@ export default function WhatsNew() {
               {features.map((feature, index) => (
                 <div key={index} className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-neon-lime/10 border-2 border-neon-lime rounded-xl flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="text-neon-lime" size={24} />
+                    <feature.icon className="text-neon-lime" size={24} aria-hidden="true" />
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">{feature.title}</h4>
@@ -72,7 +72,7 @@ export default function WhatsNew() {
 
                   <div className="space-y-4">
                     <div className="relative h-40">
-                      <svg className="w-full h-full" viewBox="0 0 300 150" preserveAspectRatio="none">
+                      <svg className="w-full h-full" viewBox="0 0 300 150" preserveAspectRatio="none" aria-hidden="true">
                         <path
                           d="M 0,100 Q 50,80 100,70 T 200,50 T 300,30"
                           fill="none"
@@ -84,7 +84,7 @@ export default function WhatsNew() {
 
                     <div className="text-center space-y-4">
                       <h3 className="text-white font-bold text-2xl">Join to<br />building<br />crypto.</h3>
-                      <button className="bg-neon-lime text-deep-black px-8 py-3 rounded-full font-semibold hover:bg-neon-lime/90 transition-all">
+                      <button className="bg-neon-lime text-deep-black px-8 py-3 rounded-full font-semibold hover:bg-neon-lime/90 transition-all" aria-label="Get started with crypto">
                         Get Started
                       </button>
                     </div>
