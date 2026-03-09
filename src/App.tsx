@@ -6,6 +6,7 @@ import TrustSection from './components/TrustSection';
 
 const Portfolio = lazy(() => import('./components/Portfolio'));
 const WhatsNew = lazy(() => import('./components/WhatsNew'));
+const Testimonial = lazy(() => import('./components/Testimonial'));
 const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Suspense fallback={<div className="min-h-[400px]" aria-busy="true" />}>
         <Portfolio />
         <WhatsNew />
+        <Testimonial />
         <Footer />
       </Suspense>
     </div>
