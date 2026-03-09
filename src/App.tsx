@@ -11,7 +11,7 @@ const Footer = lazy(() => import('./components/Footer'));
 
 function App() {
   return (
-    <div className="min-h-screen bg-deep-black">
+    <div className="min-h-screen bg-deep-black overflow-x-hidden">
       <Navbar />
       <Hero />
       <FeaturesGrid />
