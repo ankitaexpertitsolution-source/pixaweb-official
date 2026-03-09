@@ -16,14 +16,14 @@ export default function Testimonial() {
             <button
               type="button"
               className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/70 border border-white/20 text-white hover:border-neon-lime/60 hover:text-neon-lime transition-colors"
-              aria-label="Previous testimonial"
+              aria-label="Previous slide"
             >
               <ChevronLeft size={20} aria-hidden="true" />
             </button>
             <button
               type="button"
               className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full bg-neon-lime text-deep-black hover:bg-neon-lime/90 shadow-[0_0_18px_rgba(191,255,71,0.9)] transition-colors"
-              aria-label="Next testimonial"
+              aria-label="Next slide"
             >
               <ChevronRight size={20} aria-hidden="true" />
             </button>
@@ -68,7 +68,7 @@ export default function Testimonial() {
                   <div className="h-16 w-16 sm:h-20 sm:w-20 rounded-full border-2 border-neon-lime shadow-[0_0_25px_rgba(191,255,71,0.9)] overflow-hidden">
                     <img
                       src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=160"
-                      alt="Profile photo of John Doe, Ecom Founder and Pixaweb client"
+                      alt="Client Testimonial Avatar"
                       loading="lazy"
                       className="h-full w-full object-cover"
                     />
