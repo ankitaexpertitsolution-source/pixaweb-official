@@ -14,7 +14,7 @@ export default function FeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:border-neon-lime/50 transition-all duration-300">
             <div className="space-y-6">
               <span className="text-5xl font-bold text-white">01.</span>
@@ -53,6 +53,19 @@ export default function FeaturesGrid() {
                 <h3 className="text-2xl font-bold text-white mb-4">by insurance.</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Phasellus vitales est secures a growing ecosystem of specialized blockchains.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:border-neon-lime/50 transition-all duration-300">
+            <div className="space-y-6">
+              <span className="text-5xl font-bold text-white">04.</span>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2">Google Speed &amp; SEO</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Recovery.</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  We optimize your core web vitals to ensure your business ranks on the first page of Google.
                 </p>
               </div>
             </div>
